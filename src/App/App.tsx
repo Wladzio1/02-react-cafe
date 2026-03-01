@@ -3,9 +3,9 @@ import { useState } from "react";
 import css from "./App.module.css";
 
 // COMPONENTS
-import CafeInfo from "../CafeInfo/CafeInfo";
-import VoteOptions from "../VoteOptions/VoteOptions";
-import VoteStats from "../VoteStats/VoteStats";
+import CafeInfo from "../components/CafeInfo/CafeInfo";
+import VoteOptions from "../components/VoteOptions/VoteOptions";
+import VoteStats from "../components/VoteStats/VoteStats";
 
 // TYPES
 import type { VoteType } from "../types/votes";
