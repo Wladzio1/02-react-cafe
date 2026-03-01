@@ -9,7 +9,7 @@ import VoteStats from "../VoteStats/VoteStats";
 
 // TYPES
 import type { VoteType } from "../../types/votes";
-import type Votes from "../../types/votes";
+import type { Votes } from "../../types/votes";
 
 export default function App() {
   // STATE
