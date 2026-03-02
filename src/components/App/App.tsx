@@ -44,19 +44,17 @@ export default function App() {
         onReset={resetVotes}
         canReset={votes.good + votes.neutral + votes.bad > 0}
       />
-      {votes.good + votes.neutral + votes.bad > 0 && (
-        <VoteStats
-          votes={votes}
-          totalVotes={votes.good + votes.neutral + votes.bad}
-          positiveRate={
-            votes.good + votes.neutral + votes.bad > 0
-              ? Math.round(
-                  (votes.good / (votes.good + votes.neutral + votes.bad)) * 100,
-                )
-              : 0
-          }
-        />
-      )}
+      <VoteStats
+        votes={votes}
+        totalVotes={votes.good + votes.neutral + votes.bad}
+        positiveRate={
+          votes.good + votes.neutral + votes.bad > 0
+            ? Math.round(
+                (votes.good / (votes.good + votes.neutral + votes.bad)) * 100,
+              )
+            : 0
+        }
+      />
     </div>
   );
 }
